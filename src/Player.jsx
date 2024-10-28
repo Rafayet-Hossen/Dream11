@@ -1,12 +1,25 @@
 import PropTypes from 'prop-types';
-
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Player = ({player}) => {
     const{name,country,role,battingRole,bowlingRole,price,image} = player;
+    //const [notification,setNotification] = useState(false);
+    const notify = () => {
+      toast.success("Player Selected successfully!", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
     return (
       <div className="border w-96 p-5 space-y-2 rounded-xl">
         <div>
-          <img className='rounded-xl h-72 w-96' src={image} alt="" />
+          <img className="rounded-xl h-72 w-96" src={image} alt="" />
         </div>
         <div>
           <h1 className="text-2xl font-extrabold flex gap-1 items-center">
@@ -41,7 +54,9 @@ const Player = ({player}) => {
             </svg>
             {country}
           </h1>
-          <h1 className='border px-2 py-1 rounded-xl bg-base-200 font-bold'>{role}</h1>
+          <h1 className="border px-2 py-1 rounded-xl bg-base-200 font-bold">
+            {role}
+          </h1>
         </div>
         <hr />
         <div className="flex flex-row justify-between">
@@ -50,9 +65,15 @@ const Player = ({player}) => {
         </div>
         <div className="flex flex-row justify-between items-center">
           <h1 className="font-bold text-lg">{price}</h1>
-          <button className="border px-3 py-1 mt-1 rounded-xl bg-base-200 font-bold hover:bg-base-300">
+          <button
+            onClick={notify}
+            className="border px-3 py-1 mt-1 rounded-xl bg-base-200 font-bold hover:bg-base-300"
+          >
             Choose Player
           </button>
+        </div>
+        <div>
+          <ToastContainer />
         </div>
       </div>
     );

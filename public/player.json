@@ -1,30 +1,30 @@
 [
   {
-    "name": "Virat Kohli",
-    "country": "India",
+    "name": "Mahmudullah Riyad",
+    "country": "Bangladesh",
     "role": "Batsman",
     "battingRole": "Right-handed",
     "bowlingRole": "Right-arm medium",
     "price": "$15,000,000",
-    "image": "https://i.postimg.cc/mr26c79X/viratc.jpg"
+    "image": "https://i.postimg.cc/Kv4mC9MF/reyad.jpg"
   },
   {
-    "name": "Rohit Sharma",
-    "country": "India",
+    "name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
     "role": "Batsman",
     "battingRole": "Right-handed",
     "bowlingRole": "Right-arm off-break",
     "price": "$12,000,000",
-    "image": "https://i.postimg.cc/76RL1Xj6/rohit.jpg"
+    "image": "https://i.postimg.cc/pd2Jknm9/Mushfiq.jpg"
   },
   {
-    "name": "Jasprit Bumrah",
-    "country": "India",
+    "name": "Mushtafizur Rahman",
+    "country": "Bangladesh",
     "role": "Bowler",
-    "battingRole": "Right-handed",
-    "bowlingRole": "Right-arm fast",
+    "battingRole": "Left-handed",
+    "bowlingRole": "Left-arm fast",
     "price": "$20,000,000",
-    "image": "https://i.postimg.cc/fR7J4cS2/Bumra.jpg"
+    "image": "https://i.postimg.cc/Zn11yLKv/1.jpg"
   },
   {
     "name": "Babar Azam",
