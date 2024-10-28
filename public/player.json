@@ -1,110 +1,122 @@
 [
   {
+    "id": 1,
     "name": "Mahmudullah Riyad",
     "country": "Bangladesh",
     "role": "Batsman",
     "battingRole": "Right-handed",
     "bowlingRole": "Right-arm medium",
-    "price": "$15,000,000",
+    "price": "1500000",
     "image": "https://i.postimg.cc/Kv4mC9MF/reyad.jpg"
   },
   {
+    "id": 2,
     "name": "Mushfiqur Rahim",
     "country": "Bangladesh",
     "role": "Batsman",
     "battingRole": "Right-handed",
     "bowlingRole": "Right-arm off-break",
-    "price": "$12,000,000",
+    "price": "1200000",
     "image": "https://i.postimg.cc/pd2Jknm9/Mushfiq.jpg"
   },
   {
+    "id": 3,
     "name": "Mushtafizur Rahman",
     "country": "Bangladesh",
     "role": "Bowler",
     "battingRole": "Left-handed",
     "bowlingRole": "Left-arm fast",
-    "price": "$20,000,000",
+    "price": "2000000",
     "image": "https://i.postimg.cc/Zn11yLKv/1.jpg"
   },
   {
+    "id": 4,
     "name": "Babar Azam",
     "country": "Pakistan",
     "role": "Batsman",
     "battingRole": "Right-handed",
     "bowlingRole": "Right-arm off-break",
-    "price": "$10,000,000",
+    "price": "1000000",
     "image": "https://i.postimg.cc/8P0q19Ms/babarc.jpg"
   },
   {
+    "id": 5,
     "name": "Shaheen Afridi",
     "country": "Pakistan",
     "role": "Bowler",
     "battingRole": "Left-handed",
     "bowlingRole": "Left-arm fast",
-    "price": "$18,000,000",
+    "price": "1800000",
     "image": "https://i.postimg.cc/zBxxxHk3/1.jpg"
   },
   {
+    "id": 6,
     "name": "Kane Williamson",
     "country": "New Zealand",
     "role": "Batsman",
     "battingRole": "Right-handed",
     "bowlingRole": "Right-arm off-break",
-    "price": "$8,000,000",
+    "price": "8000000",
     "image": "https://i.postimg.cc/CxbJWQ43/kane1.jpg"
   },
   {
+    "id": 7,
     "name": "Trent Boult",
     "country": "New Zealand",
     "role": "Bowler",
     "battingRole": "Left-handed",
     "bowlingRole": "Left-arm fast",
-    "price": "$16,000,000",
+    "price": "1600000",
     "image": "https://i.postimg.cc/KYFQFDqR/b1.jpg"
   },
   {
+    "id": 8,
     "name": "Jos Buttler",
     "country": "England",
     "role": "Wicket-keeper Batsman",
     "battingRole": "Right-handed",
     "bowlingRole": "Right-arm off-break",
-    "price": "$12,000,000",
+    "price": "1200000",
     "image": "https://i.postimg.cc/4yrb06H4/1b1.jpg"
   },
   {
+    "id": 9,
     "name": "Jofra Archer",
     "country": "England",
     "role": "Bowler",
     "battingRole": "Right-handed",
     "bowlingRole": "Right-arm fast",
-    "price": "$22,000,000",
+    "price": "2200000",
     "image": "https://i.postimg.cc/9MkG4dpP/ar1.jpg"
   },
   {
+    "id": 10,
     "name": "David Warner",
     "country": "Australia",
     "role": "Batsman",
     "battingRole": "Left-handed",
     "bowlingRole": "Right-arm off-break",
-    "price": "$10,000,000",
+    "price": "1000000",
     "image": "https://i.postimg.cc/9Q2NF2zm/wr1.jpg"
   },
   {
+    "id": 11,
     "name": "Pat Cummins",
     "country": "Australia",
     "role": "Bowler",
     "battingRole": "Right-handed",
     "bowlingRole": "Right-arm fast",
-    "price": "$20,000,000",
+    "price": "2000000",
     "image": "https://i.postimg.cc/2yv2r9DL/12.jpg"
   },
   {
+    "id": 12,
     "name": "Rashid Khan",
     "country": "Afghanistan",
     "role": "Bowler",
     "battingRole": "Right-handed",
     "bowlingRole": "Leg-break googly",
-    "price": "$15,000,000",
+    "price": "1500000",
     "image": "https://i.postimg.cc/TP49mv2W/r1.jpg"
   }
 ]
