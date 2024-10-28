@@ -4,7 +4,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Player = ({player}) => {
     const{name,country,role,battingRole,bowlingRole,price,image} = player;
-    //const [notification,setNotification] = useState(false);
     const notify = () => {
       toast.success("Player Selected successfully!", {
         position: "top-center",
