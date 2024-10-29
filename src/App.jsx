@@ -4,11 +4,16 @@ import { useEffect, useState } from "react";
 import Players from "./Players";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Button from "./Button";
+import SelectedPlayers from "./SelectedPlayers";
 
 function App() {
   const [coins, setCoins] = useState(0);
+  const [selectedPlayers, setSelectedPlayers] = useState([]);
+  const [view, setView] = useState("available");
+
   const handleAddCoins = (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
     setCoins(coins + 1000000);
     notifySuccess();
   };
@@ -25,6 +30,14 @@ function App() {
     });
   };
 
+  const handleSelectPlayer = (player) => {
+    setSelectedPlayers((prev) => [...prev, player]);
+  };
+
+  const handleViewChange = (newView) => {
+    setView(newView);
+  };
+
   useEffect(() => {
     document.title = "Welcome to Dream11";
   }, []);
@@ -33,7 +46,19 @@ function App() {
     <>
       <Header coins={coins} />
       <Banner handleAddCoins={handleAddCoins} />
-      <Players coins={coins} setCoins={setCoins} />
+      <Button onViewChange={handleViewChange} view={view} />
+      {view === "available" ? (
+        <Players
+          coins={coins}
+          setCoins={setCoins}
+          onSelectPlayer={handleSelectPlayer}
+        />
+      ) : (
+        <SelectedPlayers
+          selectedPlayers={selectedPlayers}
+          onViewChange={handleViewChange}
+        />
+      )}
       <ToastContainer />
     </>
   );

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Player from "./Player";
 import PropTypes from "prop-types";
 
-const Players = ({ coins, setCoins }) => {
+const Players = ({ coins, setCoins, onSelectPlayer }) => {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
@@ -10,8 +10,15 @@ const Players = ({ coins, setCoins }) => {
       .then((res) => res.json())
       .then((data) => setPlayers(data));
   }, []);
-  const onSelectPlayer = (price) => {
-    setCoins((prevCoins) => prevCoins - price);
+
+  const handleSelectPlayer = (player) => {
+    const price = player.price;
+    if (coins >= price) {
+      onSelectPlayer(player);
+      setCoins((prevCoins) => prevCoins - price);
+    } else {
+      console.log("Not enough coins!");
+    }
   };
 
   return (
@@ -21,7 +28,7 @@ const Players = ({ coins, setCoins }) => {
           key={player.id}
           player={player}
           coins={coins}
-          onSelectPlayer={onSelectPlayer}
+          onSelectPlayer={handleSelectPlayer} 
         />
       ))}
     </div>
@@ -30,7 +37,8 @@ const Players = ({ coins, setCoins }) => {
 
 Players.propTypes = {
   coins: PropTypes.number.isRequired,
-  setCoins: PropTypes.func.isRequired, 
+  setCoins: PropTypes.func.isRequired,
+  onSelectPlayer: PropTypes.func.isRequired,
 };
 
 export default Players;
